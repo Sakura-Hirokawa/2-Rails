@@ -65,7 +65,7 @@ describe '投稿のテスト' do
       it '編集の遷移先は編集画面か' do
         edit_link = find_all('a')[0]
         edit_link.click
-        expect(current_path).to eq('/todolists'+list.id.to_s+'/edit')
+        expect(current_path).to eq('/todolists/' + list.id.to_s + '/edit')
       end
     end
     context 'list削除のテスト' do
@@ -92,7 +92,7 @@ describe '投稿のテスト' do
         fill_in 'list[title]', with: Faker::Lorem.characters(number:5)
         fill_in 'list[body]', with: Faker::Lorem.characters(number:20)
         click_button '保存'
-        expect(page).to have_current_path todolist_path(List)
+        expect(page).to have_current_path todolist_path(list)
       end
     end
   end
