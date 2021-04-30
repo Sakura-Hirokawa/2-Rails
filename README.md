@@ -1,4 +1,5 @@
-# 2章sample_app
+# DMM WEBCAMPコンテンツ【Rubyを学ぼう】
+DMM WEBCAMPの学習コンテンツRubyを学ぼうのアプリケーション制作です。
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
